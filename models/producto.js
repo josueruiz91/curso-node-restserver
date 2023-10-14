@@ -25,12 +25,13 @@ const ProductoSchema = Schema({
         ref: 'Categoria',
         required: true
     },
-    descripcion: { type:String },
+    descripcion: { type: String },
     disponible: {
         type: Boolean,
         default: true,
         required: true
-    }
+    },
+    img: { type: String }
 });
 
 ProductoSchema.methods.toJSON = function() {
